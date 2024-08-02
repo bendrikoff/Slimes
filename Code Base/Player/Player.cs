@@ -15,7 +15,7 @@ public class Player : Character, IControllable
     
     private CharacterController _controller;
     
-    private float _colliderRadius = 3;
+    private float _colliderRadius = 50;
     
     private Acceleration _acceleration;
     private void Awake()
@@ -73,7 +73,9 @@ public class Player : Character, IControllable
     private void Update()
     {
         _force = Force;
-        var hitColliders = Physics.OverlapSphere(transform.position, _colliderRadius);
+        
+        Vector3 sphereCenter = new Vector3(transform.position.x, transform.position.y - 50,transform.position.z);
+        var hitColliders = Physics.OverlapSphere(sphereCenter, _colliderRadius);
 
         foreach (var hitCollider in hitColliders)
         {
@@ -91,7 +93,7 @@ public class Player : Character, IControllable
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-        Vector3 sphereCenter = transform.position;
+        Vector3 sphereCenter = new Vector3(transform.position.x, transform.position.y - 50,transform.position.z);
         Gizmos.DrawWireSphere(sphereCenter, _colliderRadius);
     }
 }

@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+//todo: сделать чтобы автоматически заполнялся список скинов через Instantiate
 public class SkinPanelUI : MonoBehaviour
 {
     [SerializeField] private List<Image> SkinImages;

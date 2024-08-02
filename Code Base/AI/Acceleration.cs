@@ -11,8 +11,6 @@ public class Acceleration : MonoBehaviour
     public float AccelerationForce;
     public bool IsAcceleration;
     public float Duration;
-
-    public float Timer => _durationTimer;
     
     private float _durationTimer;
     private float _cooldownTimer;

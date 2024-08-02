@@ -37,7 +37,7 @@ public class FoodSpawner : Singleton<FoodSpawner>
       var randomX = Random.Range(bounds.max.x, bounds.min.x);
       var randomY = Random.Range(bounds.max.z, bounds.min.z);
 
-      return new Vector3(randomX, 0, randomY);
+      return new Vector3(randomX, -50, randomY);
    }
    private Color GetRandomColor() => _colors[Random.Range(0, _colors.Count - 1)];
 

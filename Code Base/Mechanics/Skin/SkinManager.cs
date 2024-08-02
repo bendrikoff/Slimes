@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Code_Base.Data;
 using UnityEngine;
-
+//todo: рефактор сделать
 public class SkinManager : Singleton<SkinManager>
 {
     public List<Skin> Skins;
