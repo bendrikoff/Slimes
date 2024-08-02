@@ -1,0 +1,28 @@
+{
+    "idSave": 55,
+    "isFirstSession": false,
+    "language": "en",
+    "promptDone": false,
+    "money": 1,
+    "newPlayerName": "Hello!",
+    "openLevels": [
+        false,
+        true,
+        false
+    ],
+    "Data": {
+        "BuyedSkins": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            8,
+            0
+        ],
+        "SelectedSkin": 3,
+        "LastCheckIn": "02.08.2024 16:21:08",
+        "LastDailyReward": 1
+    }
+}
