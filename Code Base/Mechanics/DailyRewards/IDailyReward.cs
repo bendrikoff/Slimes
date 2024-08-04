@@ -1,7 +1,7 @@
 namespace Code_Base.Mechanics.DailyRewards
 {
-    public interface IDailyReward
+    public interface IReward
     {
-        public void Get(int count);
+        public void Get();
     }
 }

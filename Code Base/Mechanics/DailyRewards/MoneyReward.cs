@@ -3,11 +3,12 @@ using UnityEngine;
 
 namespace Code_Base.Mechanics.DailyRewards
 {
-    public class MoneyReward: MonoBehaviour, IDailyReward
+    public class MoneyReward: MonoBehaviour, IReward
     {
-        public void Get(int count)
+        public int Count;
+        public void Get()
         {
-            Money.Instance.Count += count;
+            Money.Instance.Count += Count;
         }
     }
 }
