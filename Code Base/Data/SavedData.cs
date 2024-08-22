@@ -14,7 +14,11 @@ namespace Code_Base.Data
         public string LastCheckIn;
 
         public int LastDailyReward;
-        
+
+        public int Money;
+
+        public int WheelCount;
+
         public SavedData()
         {
             BuyedSkins = new List<SkinName>();

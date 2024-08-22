@@ -1,4 +1,5 @@
 using System;
+using Code_Base.Data;
 using UnityEngine;
 
 namespace Code_Base.Interface.Money
@@ -25,6 +26,8 @@ namespace Code_Base.Interface.Money
         public void Change()
         {
             _moneyUI.MoneyText.text = Count.ToString();
+            SavingSystem.Instance.Data.Money = Count;
+            SavingSystem.Instance.Save();
         }
         
         public bool TryToBuy(int price)

@@ -1,5 +1,5 @@
 {
-    "idSave": 85,
+    "idSave": 271,
     "isFirstSession": false,
     "language": "en",
     "promptDone": false,
@@ -22,7 +22,9 @@
             0
         ],
         "SelectedSkin": 3,
-        "LastCheckIn": "04.08.2024 22:35:01",
-        "LastDailyReward": 3
+        "LastCheckIn": "10.08.2024 15:40:32",
+        "LastDailyReward": 0,
+        "Money": 5,
+        "WheelCount": 0
     }
 }

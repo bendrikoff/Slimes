@@ -82,6 +82,7 @@ public class Enemy : Character
 
     private void Update()
     {
+        if(GamePause.Instance.IsPause) return;
         var closestEatable = _eatables
             .Where(x=>x.GameObject.activeInHierarchy)
             .OrderBy(x => Vector3.Distance(x.GameObject.transform.position, transform.position))
@@ -108,6 +109,7 @@ public class Enemy : Character
     public override void Move(Vector3 direction)
     {
        var vector = (direction - transform.position).normalized;
+       vector = new Vector3(vector.x, 0, vector.z);
         _controller.Move(vector * MoveSpeed * Time.fixedDeltaTime);
     }
 

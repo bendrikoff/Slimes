@@ -20,10 +20,11 @@ public class LuckyWheelArrow:MonoBehaviour
 
     private void GetReward()
     {
+        Debug.Log(Reward);
         Reward.Get();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.TryGetComponent<IReward>(out var reward))
         {
